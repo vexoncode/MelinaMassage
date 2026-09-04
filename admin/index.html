@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>پنل ادمین | برای تو</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- صفحه ورود با رمز -->
+<div class="login-wrap" id="loginWrap">
+  <form class="login-card" id="loginForm">
+    <h1>ورود به پنل ادمین 🔒</h1>
+    <input type="password" id="passwordInput" placeholder="رمز عبور را وارد کن" autocomplete="current-password" />
+    <button type="submit" class="btn">ورود</button>
+    <p class="err" id="loginErr" hidden>رمز اشتباهه، دوباره امتحان کن.</p>
+  </form>
+</div>
+
+<!-- پنل اصلی -->
+<div class="panel" id="panel" hidden>
+  <header class="panel-header">
+    <h1>پنل ادمین — برای تو 💗</h1>
+    <div class="header-actions">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">در حال اتصال...</span>
+      <button class="btn btn-small" id="logoutBtn">خروج</button>
+    </div>
+  </header>
+
+  <section class="stats-row">
+    <div class="stat-card">
+      <div class="stat-num" id="statTotalEvents">0</div>
+      <div class="stat-label">کل رویدادها</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statTotalSessions">0</div>
+      <div class="stat-label">بازدیدکننده‌ها</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statYes">0</div>
+      <div class="stat-label">✅ یه فرصت دیگه</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num" id="statNo">0</div>
+      <div class="stat-label">❌ فعلاً نه</div>
+    </div>
+  </section>
+
+  <section class="feed-section">
+    <div class="feed-head">
+      <h2>رویدادهای زنده (Live)</h2>
+      <button class="btn btn-small" id="clearFeedBtn">پاک کردن نمایش</button>
+    </div>
+    <div class="feed" id="feed">
+      <p class="empty" id="emptyMsg">هنوز رویدادی ثبت نشده. منتظر کلیک‌های اولین بازدیدکننده باش...</p>
+    </div>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

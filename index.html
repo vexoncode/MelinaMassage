@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <title>برای تو ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Lalezar&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="stars-bg"></div>
+
+<main class="stage">
+
+  <!-- ==================== صفحه اول ==================== -->
+
+  <section class="screen active" data-screen="landing">
+
+    <h1 class="title">
+      برای تو <span class="heart-outline">♡</span>
+    </h1>
+
+    <p class="subtitle">
+      یه پیام برای تو، ملینا ♥
+    </p>
+
+    <button
+      class="btn btn-primary"
+      data-action="start"
+      type="button"
+    >
+      بخونش ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه دوم ==================== -->
+
+  <section class="screen" data-screen="step1">
+
+    <div class="progress" data-progress="1"></div>
+
+    <div class="bubble">
+      <b>ملینا ♥</b><br>
+      امیدوارم حالت خوب باشه؟
+    </div>
+
+    <div class="art cat-glow">
+
+      <div class="real-cat">
+
+        <svg viewBox="0 0 320 350" class="cat-svg">
+
+          <defs>
+
+            <linearGradient id="catBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff0e8"/>
+              <stop offset="35%" stop-color="#f3c7b8"/>
+              <stop offset="72%" stop-color="#d38c88"/>
+              <stop offset="100%" stop-color="#9b5c6b"/>
+            </linearGradient>
+
+            <radialGradient id="catFace" cx="38%" cy="28%" r="78%">
+              <stop offset="0%" stop-color="#fff7f2"/>
+              <stop offset="42%" stop-color="#f4d0c2"/>
+              <stop offset="78%" stop-color="#d99891"/>
+              <stop offset="100%" stop-color="#a86470"/>
+            </radialGradient>
+
+            <linearGradient id="earColor" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#f9ded4"/>
+              <stop offset="100%" stop-color="#bc707b"/>
+            </linearGradient>
+
+            <linearGradient id="earInner" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffb8c7"/>
+              <stop offset="100%" stop-color="#c65e79"/>
+            </linearGradient>
+
+            <radialGradient id="eyeColor" cx="32%" cy="25%" r="70%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="16%" stop-color="#c9fbff"/>
+              <stop offset="48%" stop-color="#54d5e6"/>
+              <stop offset="100%" stop-color="#17758a"/>
+            </radialGradient>
+
+            <linearGradient id="heartColor" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffb5d2"/>
+              <stop offset="35%" stop-color="#ff6da8"/>
+              <stop offset="72%" stop-color="#f12e78"/>
+              <stop offset="100%" stop-color="#b91555"/>
+            </linearGradient>
+
+            <radialGradient id="bellyColor">
+              <stop offset="0%" stop-color="#fff8f2"/>
+              <stop offset="70%" stop-color="#f2c9bb"/>
+              <stop offset="100%" stop-color="#d8958c"/>
+            </radialGradient>
+
+            <filter id="shadow">
+              <feDropShadow
+                dx="0"
+                dy="8"
+                stdDeviation="8"
+                flood-color="#000"
+                flood-opacity=".38"
+              />
+            </filter>
+
+            <filter id="softGlow">
+              <feGaussianBlur stdDeviation="5" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+
+          </defs>
+
+
+          <!-- دم -->
+          <path
+            class="cat-tail"
+            d="
+              M230 265
+              C285 250 300 190 270 160
+              C247 137 221 153 236 177
+              C247 195 270 179 273 158
+            "
+          />
+
+
+          <!-- بدن -->
+          <ellipse
+            class="cat-body"
+            cx="160"
+            cy="240"
+            rx="86"
+            ry="98"
+            fill="url(#catBody)"
+            filter="url(#shadow)"
+          />
+
+
+          <ellipse
+            class="cat-belly"
+            cx="160"
+            cy="252"
+            rx="59"
+            ry="72"
+            fill="url(#bellyColor)"
+          />
+
+
+          <!-- سر -->
+          <g class="cat-head">
+
+            <path
+              class="cat-ear cat-ear-left"
+              d="
+                M80 118
+                L76 39
+                Q77 23 91 34
+                L139 92
+                Z
+              "
+              fill="url(#earColor)"
+              filter="url(#shadow)"
+            />
+
+            <path
+              class="cat-ear cat-ear-right"
+              d="
+                M181 92
+                L229 34
+                Q243 23 244 39
+                L240 118
+                Z
+              "
+              fill="url(#earColor)"
+              filter="url(#shadow)"
+            />
+
+            <path
+              class="cat-ear-inner"
+              d="M91 84 L89 52 L116 86 Z"
+              fill="url(#earInner)"
+            />
+
+            <path
+              class="cat-ear-inner"
+              d="M204 86 L231 52 L229 84 Z"
+              fill="url(#earInner)"
+            />
+
+            <ellipse
+              class="cat-face"
+              cx="160"
+              cy="120"
+              rx="84"
+              ry="78"
+              fill="url(#catFace)"
+              filter="url(#shadow)"
+            />
+
+            <path
+              class="forehead-light"
+              d="
+                M160 49
+                C145 67 143 87 160 101
+                C177 87 175 67 160 49
+                Z
+              "
+            />
+
+            <!-- چشم -->
+            <ellipse
+              class="cat-eye"
+              cx="127"
+              cy="118"
+              rx="15"
+              ry="20"
+              fill="url(#eyeColor)"
+              filter="url(#softGlow)"
+            />
+
+            <ellipse
+              class="cat-eye"
+              cx="193"
+              cy="118"
+              rx="15"
+              ry="20"
+              fill="url(#eyeColor)"
+              filter="url(#softGlow)"
+            />
+
+            <ellipse
+              class="cat-pupil"
+              cx="127"
+              cy="121"
+              rx="5"
+              ry="13"
+            />
+
+            <ellipse
+              class="cat-pupil"
+              cx="193"
+              cy="121"
+              rx="5"
+              ry="13"
+            />
+
+            <circle
+              class="eye-shine"
+              cx="122"
+              cy="111"
+              r="4"
+            />
+
+            <circle
+              class="eye-shine"
+              cx="188"
+              cy="111"
+              r="4"
+            />
+
+            <g class="cat-blink">
+              <path d="M110 119 Q127 106 144 119"/>
+              <path d="M176 119 Q193 106 210 119"/>
+            </g>
+
+            <!-- بینی -->
+            <path
+              class="cat-nose"
+              d="
+                M151 142
+                Q160 134 169 142
+                Q160 153 151 142
+                Z
+              "
+            />
+
+            <!-- دهان -->
+            <path
+              class="cat-mouth"
+              d="
+                M160 150
+                Q160 161 149 163
+                M160 150
+                Q160 161 171 163
+              "
+            />
+
+            <ellipse
+              class="cat-cheek"
+              cx="111"
+              cy="150"
+              rx="19"
+              ry="10"
+            />
+
+            <ellipse
+              class="cat-cheek"
+              cx="209"
+              cy="150"
+              rx="19"
+              ry="10"
+            />
+
+            <!-- سبیل -->
+            <g class="cat-whiskers">
+              <path d="M108 140 L49 126"/>
+              <path d="M108 151 L45 149"/>
+              <path d="M108 162 L53 174"/>
+
+              <path d="M212 140 L271 126"/>
+              <path d="M212 151 L275 149"/>
+              <path d="M212 162 L267 174"/>
+            </g>
+
+          </g>
+
+
+          <!-- دست چپ -->
+          <path
+            class="cat-arm cat-arm-left"
+            d="
+              M105 214
+              C86 222 85 252 101 266
+              C113 277 129 269 133 254
+              L132 225
+              Q120 214 105 214
+              Z
+            "
+            fill="url(#catBody)"
+            filter="url(#shadow)"
+          />
+
+
+          <!-- دست راست -->
+          <path
+            class="cat-arm cat-arm-right"
+            d="
+              M215 214
+              C234 222 235 252 219 266
+              C207 277 191 269 187 254
+              L188 225
+              Q200 214 215 214
+              Z
+            "
+            fill="url(#catBody)"
+            filter="url(#shadow)"
+          />
+
+
+          <!-- قلب بالاتر و بین دست‌ها -->
+          <g
+            class="held-heart-svg"
+            filter="url(#softGlow)"
+          >
+
+            <path
+              d="
+                M160 250
+
+                C132 224 113 207 113 185
+
+                C113 167 126 155 143 155
+
+                C152 155 157 160 160 168
+
+                C163 160 168 155 177 155
+
+                C194 155 207 167 207 185
+
+                C207 207 188 224 160 250
+
+                Z
+              "
+              fill="url(#heartColor)"
+            />
+
+            <path
+              class="heart-highlight"
+              d="M135 177 Q143 168 151 170"
+            />
+
+          </g>
+
+
+          <!-- پاها -->
+          <ellipse
+            class="cat-paw cat-paw-left"
+            cx="126"
+            cy="318"
+            rx="33"
+            ry="19"
+            fill="url(#catBody)"
+          />
+
+          <ellipse
+            class="cat-paw cat-paw-right"
+            cx="194"
+            cy="318"
+            rx="33"
+            ry="19"
+            fill="url(#catBody)"
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="step2"
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه سوم ==================== -->
+
+  <section class="screen" data-screen="step2">
+
+    <div class="progress" data-progress="2"></div>
+
+    <div class="bubble">
+      میخوام توی چند مرحله<br>
+      چیزی رو بهت نشون بدم...<br>
+      آماده‌ای؟ 💗
+    </div>
+
+    <div class="art">
+
+      <div class="neon-heart">
+
+        <svg
+          viewBox="0 0 200 180"
+          class="pulse-heart"
+        >
+
+          <path
+            d="
+              M100 170
+              C20 110, 0 60, 40 30
+              C65 10, 90 25, 100 50
+              C110 25, 135 10, 160 30
+              C200 60, 180 110, 100 170 Z
+            "
+          />
+
+          <polyline
+            class="pulse-line"
+            points="
+              20,95
+              60,95
+              75,60
+              95,130
+              110,95
+              190,95
+            "
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="step3"
+      type="button"
+    >
+      بریم 🚀
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه چهارم ==================== -->
+
+  <section class="screen" data-screen="step3">
+
+    <div class="progress" data-progress="3"></div>
+
+    <div class="bubble">
+      بعضی آدم‌ها فقط وارد زندگی آدم نمی‌شن...<br>
+      یه جایی از قلب آدم برای همیشه<br>
+      به اسم اون‌ها ثبت می‌شه. ♥
+    </div>
+
+    <div class="art skyline-scene">
+
+      <div class="sky-heart">♥</div>
+
+      <div class="mini-cat mini-cat-dark">
+
+        <svg
+          viewBox="0 0 260 210"
+          class="mini-cat-svg"
+        >
+
+          <defs>
+
+            <linearGradient id="miniBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff0e8"/>
+              <stop offset="45%" stop-color="#e7b7aa"/>
+              <stop offset="100%" stop-color="#a96b75"/>
+            </linearGradient>
+
+            <radialGradient id="miniFace">
+              <stop offset="0%" stop-color="#fff5ef"/>
+              <stop offset="70%" stop-color="#dca39b"/>
+              <stop offset="100%" stop-color="#9c606c"/>
+            </radialGradient>
+
+          </defs>
+
+          <path
+            class="mini-cat-tail"
+            d="
+              M185 153
+              C225 145 232 110 213 92
+              C199 79 185 89 192 103
+            "
+          />
+
+          <ellipse
+            class="mini-cat-body"
+            cx="130"
+            cy="143"
+            rx="61"
+            ry="48"
+            fill="url(#miniBody)"
+          />
+
+          <path
+            class="mini-cat-head"
+            d="
+              M73 93
+              L77 40
+              L104 64
+              Q130 52 156 64
+              L183 40
+              L187 93
+              Q187 135 130 137
+              Q73 135 73 93
+              Z
+            "
+            fill="url(#miniFace)"
+          />
+
+          <path
+            class="mini-ear-inner"
+            d="M86 76 L88 53 L106 72 Z"
+          />
+
+          <path
+            class="mini-ear-inner"
+            d="M154 72 L177 53 L175 77 Z"
+          />
+
+          <ellipse
+            cx="108"
+            cy="92"
+            rx="7"
+            ry="10"
+            class="mini-cat-eye"
+          />
+
+          <ellipse
+            cx="152"
+            cy="92"
+            rx="7"
+            ry="10"
+            class="mini-cat-eye"
+          />
+
+          <ellipse
+            cx="108"
+            cy="95"
+            rx="2.5"
+            ry="6"
+            class="mini-pupil"
+          />
+
+          <ellipse
+            cx="152"
+            cy="95"
+            rx="2.5"
+            ry="6"
+            class="mini-pupil"
+          />
+
+          <path
+            d="M123 106 Q130 101 137 106 Q130 114 123 106 Z"
+            class="mini-cat-nose"
+          />
+
+          <path
+            class="mini-mouth"
+            d="
+              M130 113
+              Q130 122 123 124
+              M130 113
+              Q130 122 137 124
+            "
+          />
+
+          <ellipse
+            cx="104"
+            cy="165"
+            rx="21"
+            ry="11"
+            class="mini-cat-paw"
+            fill="url(#miniBody)"
+          />
+
+          <ellipse
+            cx="156"
+            cy="165"
+            rx="21"
+            ry="11"
+            class="mini-cat-paw"
+            fill="url(#miniBody)"
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="step4"
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه پنجم ==================== -->
+
+  <section class="screen" data-screen="step4">
+
+    <div class="progress" data-progress="4"></div>
+
+    <div class="bubble">
+      قول نمی‌دم دنیا همیشه برات بی‌نقص باشه...<br>
+      اما قول می‌دم تا وقتی کنارتم،<br>
+      برای ساختن روزهای قشنگ‌ترت<br>
+      از هیچ تلاشی دریغ نکنم. ♥
+    </div>
+
+    <div class="art desk-scene">
+
+      <div class="css-lamp">
+
+        <div class="lamp-light"></div>
+        <div class="lamp-shade"></div>
+        <div class="lamp-stand"></div>
+        <div class="lamp-base"></div>
+
+      </div>
+
+      <div class="writing-cat">
+
+        <svg
+          viewBox="0 0 280 240"
+          class="writing-cat-svg"
+        >
+
+          <defs>
+
+            <linearGradient id="writeBody" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#fff0e8"/>
+              <stop offset="40%" stop-color="#e8bbb0"/>
+              <stop offset="100%" stop-color="#a86874"/>
+            </linearGradient>
+
+            <radialGradient id="writeFace">
+              <stop offset="0%" stop-color="#fff7f1"/>
+              <stop offset="65%" stop-color="#dfaaa1"/>
+              <stop offset="100%" stop-color="#a46570"/>
+            </radialGradient>
+
+          </defs>
+
+          <path
+            class="writing-tail"
+            d="
+              M204 179
+              C246 169 254 131 234 110
+              C220 96 204 107 212 121
+            "
+          />
+
+          <ellipse
+            cx="140"
+            cy="163"
+            rx="70"
+            ry="59"
+            class="writing-body"
+            fill="url(#writeBody)"
+          />
+
+          <path
+            class="writing-head"
+            d="
+              M79 111
+              L84 52
+              L113 77
+              Q140 64 167 77
+              L196 52
+              L201 111
+              Q201 154 140 157
+              Q79 154 79 111
+              Z
+            "
+            fill="url(#writeFace)"
+          />
+
+          <path
+            class="writing-ear-inner"
+            d="M94 87 L96 65 L116 84 Z"
+          />
+
+          <path
+            class="writing-ear-inner"
+            d="M164 84 L190 65 L187 88 Z"
+          />
+
+          <ellipse
+            cx="113"
+            cy="109"
+            rx="8"
+            ry="11"
+            class="writing-eye"
+          />
+
+          <ellipse
+            cx="167"
+            cy="109"
+            rx="8"
+            ry="11"
+            class="writing-eye"
+          />
+
+          <ellipse
+            cx="113"
+            cy="112"
+            rx="3"
+            ry="6"
+            class="writing-pupil"
+          />
+
+          <ellipse
+            cx="167"
+            cy="112"
+            rx="3"
+            ry="6"
+            class="writing-pupil"
+          />
+
+          <path
+            d="M133 124 Q140 119 147 124 Q140 132 133 124 Z"
+            class="writing-nose"
+          />
+
+          <path
+            class="writing-mouth"
+            d="
+              M140 132
+              Q140 141 132 143
+              M140 132
+              Q140 141 148 143
+            "
+          />
+
+          <ellipse
+            cx="108"
+            cy="190"
+            rx="27"
+            ry="13"
+            class="writing-paw"
+            fill="url(#writeBody)"
+          />
+
+          <ellipse
+            cx="172"
+            cy="190"
+            rx="27"
+            ry="13"
+            class="writing-paw"
+            fill="url(#writeBody)"
+          />
+
+          <rect
+            x="92"
+            y="201"
+            width="96"
+            height="27"
+            rx="5"
+            class="writing-paper"
+          />
+
+          <line
+            x1="103"
+            y1="210"
+            x2="177"
+            y2="210"
+            class="writing-line"
+          />
+
+          <line
+            x1="103"
+            y1="218"
+            x2="166"
+            y2="218"
+            class="writing-line"
+          />
+
+        </svg>
+
+      </div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="step5"
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه ششم ==================== -->
+
+  <section class="screen" data-screen="step5">
+
+    <div class="progress" data-progress="5"></div>
+
+    <div class="bubble">
+      یه چیزی هست که می‌خوام بدونی...<br><br>
+
+      تو را دوست دارم،<br>
+      نه فقط برای آنچه هستی،<br>
+      برای تمام احساسی که<br>
+      با بودنت در من زنده می‌شود. ♥
+    </div>
+
+    <div class="star-wrap">
+
+      <svg
+        class="neon-star"
+        id="neonStar"
+        viewBox="0 0 220 210"
+        role="button"
+        tabindex="0"
+        aria-label="ستاره"
+      >
+
+        <polygon
+          points="
+            110,10
+            138,80
+            214,80
+            152,124
+            176,196
+            110,152
+            44,196
+            68,124
+            6,80
+            82,80
+          "
+        />
+
+        <text
+          x="110"
+          y="112"
+          text-anchor="middle"
+          class="star-text"
+        >
+          لمس کن
+        </text>
+
+      </svg>
+
+    </div>
+
+    <div
+      class="reason-card-wrap"
+      id="reasonCardWrap"
+      hidden
+    >
+
+      <div
+        class="reason-counter"
+        id="reasonCounter"
+      >
+        1/3
+      </div>
+
+      <div
+        class="reason-card"
+        id="reasonCard"
+      ></div>
+
+      <div
+        class="dots"
+        id="reasonDots"
+      ></div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="step6"
+      id="starContinueBtn"
+      hidden
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== صفحه انتخاب ==================== -->
+
+  <section class="screen" data-screen="step6">
+
+    <div class="progress" data-progress="6"></div>
+
+    <div class="bubble">
+
+      من حرفم رو با تمام وجودم زدم...<br>
+      حالا فقط می‌خوام بدونم<br>
+      قلبت برای من جایی دوباره داره؟ ♥
+
+    </div>
+
+    <div class="choice-row">
+
+      <button
+        class="heart-btn heart-btn--yes"
+        data-action="choice"
+        data-choice="yes"
+        type="button"
+      >
+        آره، دوباره امتحان کنیم ♥
+      </button>
+
+      <button
+        class="heart-btn heart-btn--no"
+        data-action="choice"
+        data-choice="no"
+        type="button"
+      >
+        هنوز آماده نیستم
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==================== جواب مثبت ==================== -->
+
+  <section class="screen" data-screen="thanksYes">
+
+    <div class="result-card result-card--yes">
+
+      <h2>
+        مرسی ملینا... 🥹♥
+      </h2>
+
+      <p>
+        قول میدم این فرصت رو<br>
+        ساده نگیرم.<br><br>
+
+        از اینجا به بعد،<br>
+        بذار با عمل نشونت بدم<br>
+        چقدر برام مهمی.
+      </p>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="final"
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== جواب منفی ==================== -->
+
+  <section class="screen" data-screen="thanksNo">
+
+    <div class="result-card result-card--no">
+
+      <h2>
+        ممنون که صادق بودی. ♥
+      </h2>
+
+      <p>
+        شاید جواب امروز چیزی نباشه<br>
+        که دلم می‌خواست بشنوم،<br>
+        ولی احساست برام محترمه.<br><br>
+
+        مهم اینه که انتخابت<br>
+        از ته دلت باشه.
+      </p>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      data-action="next"
+      data-next="final"
+      type="button"
+    >
+      ادامه ♥
+    </button>
+
+  </section>
+
+
+  <!-- ==================== پایان ==================== -->
+
+  <section class="screen" data-screen="final">
+
+    <div class="final-card">
+
+      <div class="envelope">
+        💌
+      </div>
+
+      <h2>
+        در آخر...
+      </h2>
+
+      <p>
+        شاید هیچ جمله‌ای نتونه دقیقاً چیزی که توی قلبمه بگه،
+        ولی خواستم حداقل یک بار، به جای حرف،
+        با عمل نشونت بدم که چقدر برام مهمی. ♥
+        <br><br>
+
+        هر تصمیمی که بگیری، انتخاب خودته
+        و من بهش احترام می‌ذارم.
+        <br><br>
+
+        فقط خواستم بدونی...
+        بعضی آدم‌ها برای آدم معمولی نیستن؛
+        بعضی‌ها می‌شن بخشی از قلب آدم.
+        <br><br>
+
+        و تو برای من،
+        یکی از همون آدم‌هایی. ♥
+      </p>
+
+      <p class="signature">
+        ممنون که تا آخرش خوندی. ♥
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
